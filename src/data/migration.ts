@@ -21,7 +21,7 @@ const createTables = () => connection
 
       CREATE TABLE IF NOT EXISTS labenusystem_class (
         id VARCHAR(255) PRIMARY KEY,
-        name VARCHAR(255),
+        name VARCHAR(255) NOT NULL,
         module VARCHAR(255) DEFAULT 0,
       );
 
