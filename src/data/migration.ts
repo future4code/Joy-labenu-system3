@@ -1,9 +1,9 @@
 import { connection } from "./connection"
-import students from "./student.json";
-import instructor from "./instructor.json";
-import classes from "./class.json";
-import hobby from "./hobby.json";
-import specialty from "./specialty.json"
+import students from "../data/populate/student.json";
+import instructor from "../data/populate/instructor.json";
+import classes from "../data/populate/class.json";
+import hobby from "../data/populate/hobby.json";
+import specialty from "../data/populate/specialty.json"
 
 
 const printError = (error: any) => { console.log(error.sqlMessage || error.message) }
