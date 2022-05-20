@@ -11,4 +11,12 @@ export class instructorDatabase {
       throw new Error(error.sqlMessage || error.message);
     }
   };
+
+  public getAllInstructors = async () =>{
+    try{
+      return await this.connection('labenusystem_instructor');
+    }catch (error: any) {
+      throw new Error(error.sqlMessage || error.message);
+   }
+  }
 }
