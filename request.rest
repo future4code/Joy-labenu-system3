@@ -6,5 +6,38 @@
 //Para requisições com headers:
 //Authorization: "token"
 
-### 
-POST 
+### // endpoint create class
+POST  http://localhost:3003/class
+Content-Type: application/json
+
+{
+
+}
+
+### // endpoint create student
+POST  http://localhost:3003/student
+Content-Type: application/json
+
+{
+    
+}
+
+### // endpoint create instructor
+POST  http://localhost:3003/instructor
+Content-Type: application/json
+
+{
+    
+}
+
+### // endpoint get all class
+GET   http://localhost:3003/class/all
+
+### // endpoint get all student
+GET   http://localhost:3003/student/all
+
+### // endpoint get student by name
+GET   http://localhost:3003/student?name=Natalia
+
+### // endpoint get all instructor
+GET   http://localhost:3003/instructors/all

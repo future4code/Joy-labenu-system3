@@ -11,4 +11,12 @@ export class classDatabase {
       throw new Error(error.sqlMessage || error.message);
     }
   };
+
+  public getAllClass = async () =>{
+    try{
+      return await this.connection('labenusystem_class');
+    }catch (error: any) {
+      throw new Error(error.sqlMessage || error.message);
+   }
+  }
 }
