@@ -12,11 +12,26 @@ export class instructorDatabase {
     }
   };
 
-  public getAllInstructors = async () =>{
-    try{
+  public getAllInstructors = async (): Promise<void> => {
+    try {
       return await this.connection('labenusystem_instructor');
-    }catch (error: any) {
+    } catch (error: any) {
       throw new Error(error.sqlMessage || error.message);
-   }
+    }
+  }
+
+  public changeInstructorClass = async (id: string, id_class: string): Promise<void> => {
+    try {
+      await this.connection("labenusystem_instructor")
+        .update({
+          id_class: id_class
+        }).where({
+          id: id
+        })
+
+    } catch (error: any) {
+      throw new Error(error.sqlMessage || error.message);
+    }
   }
 }
+
