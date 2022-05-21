@@ -12,11 +12,25 @@ export class classDatabase {
     }
   };
 
-  public getAllClass = async () =>{
-    try{
+  public getAllClass = async (): Promise<void> => {
+    try {
       return await this.connection('labenusystem_class');
-    }catch (error: any) {
+    } catch (error: any) {
       throw new Error(error.sqlMessage || error.message);
-   }
+    }
+  }
+
+  public changeClassByModule = async (id: string, module: string): Promise<void> => {
+    try {
+      await this.connection("labenusystem_class")
+      .update({
+        module: module
+      }).where({
+        id: id
+      })
+
+    } catch (error: any) {
+      throw new Error(error.sqlMessage || error.message);
+    }
   }
 }

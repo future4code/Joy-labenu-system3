@@ -1,4 +1,7 @@
 import app from "./app";
+import { changeClassByModule } from "./data/endpoints/changeClassByModule";
+import { changeInstructorClass } from "./data/endpoints/changeInstructorClass";
+import { changeStudentClass } from "./data/endpoints/changeStudentClass";
 import { createClass } from "./data/endpoints/createClass";
 import { getAllClass } from "./data/endpoints/getAllClass";
 import { getAllInstructors } from "./data/endpoints/getAllInstructors";
@@ -28,3 +31,12 @@ app.get('/student', getStudentByName)
 
 //Endpoint used to get all instructors
 app.get('/instructors/all', getAllInstructors)
+
+//Endpoint used to update class module
+app.put('/class/module', changeClassByModule)
+
+//Endpoint used to update instructor class
+app.put('/instructor/class', changeInstructorClass)
+
+//Endpoint used to update student class
+app.put('/student/class', changeStudentClass)

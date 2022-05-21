@@ -41,3 +41,30 @@ GET   http://localhost:3003/student?name=Natalia
 
 ### // endpoint get all instructor
 GET   http://localhost:3003/instructors/all
+
+### // endpoint to change class module
+PUT  http://localhost:3003/class/module
+Content-Type: application/json
+
+{
+    "id":"68a4897f-0126-4f8f-ad68-5ba3eaf4690d",
+    "module": "7"
+}
+
+### // endpoint to change instructor class
+PUT  http://localhost:3003/instructor/class
+Content-Type: application/json
+
+{
+    "id": "5a7e728a-3afa-47d6-850d-0fba7786e6a7",
+    "id_class": "6a84572b-357b-495c-80ad-1f777ed1e7a1"
+}
+
+### // endpoint to change student class
+PUT  http://localhost:3003/student/class
+Content-Type: application/json
+
+{
+    "id": "4d3bc362-f838-43d6-9e06-5f3883873f74",
+    "id_class": "68a4897f-0126-4f8f-ad68-5ba3eaf4690d"
+}
