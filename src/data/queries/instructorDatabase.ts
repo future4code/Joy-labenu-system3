@@ -12,7 +12,7 @@ export class instructorDatabase {
     }
   };
 
-  public getAllInstructors = async (): Promise<void> => {
+  public getAllInstructors = async (): Promise<any> => {
     try {
       return await this.connection('labenusystem_instructor');
     } catch (error: any) {

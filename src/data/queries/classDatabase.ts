@@ -12,7 +12,7 @@ export class classDatabase {
     }
   };
 
-  public getAllClass = async (): Promise<void> => {
+  public getAllClass = async (): Promise<any> => {
     try {
       return await this.connection('labenusystem_class')
 
