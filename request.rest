@@ -10,8 +10,9 @@
 POST  http://localhost:3003/class
 Content-Type: application/json
 
-{
-
+{   
+    "name": "Lovelace",
+    "module":"0"
 }
 
 ### // endpoint create student
@@ -19,7 +20,10 @@ POST  http://localhost:3003/student
 Content-Type: application/json
 
 {
-    
+    "name": "Lucas Txai",
+    "email": "balatensa@gmail.com",
+    "birthDate": "16/05/1995",
+    "id_class":"68a4897f-0126-4f8f-ad68-5ba3eaf4690d"
 }
 
 ### // endpoint create instructor
@@ -27,17 +31,20 @@ POST  http://localhost:3003/instructor
 Content-Type: application/json
 
 {
-    
+    "name": "Jessica Bento",
+    "email": "jessica_bento@gmail.com",
+    "birthDate": "16/05/1997",
+    "id_class":"68a4897f-0126-4f8f-ad68-5ba3eaf4690d"   
 }
 
-### // endpoint get all class
-GET   http://localhost:3003/class/all
+### // endpoint get active class
+GET   http://localhost:3003/class/active
 
 ### // endpoint get all student
 GET   http://localhost:3003/student/all
 
 ### // endpoint get student by name
-GET   http://localhost:3003/student?name=Natalia
+GET   http://localhost:3003/student?name=Lucas
 
 ### // endpoint get all instructor
 GET   http://localhost:3003/instructors/all
