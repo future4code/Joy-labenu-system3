@@ -14,7 +14,7 @@ export class classDatabase {
 
   public getAllClass = async (): Promise<void> => {
     try {
-      const result = await this.connection('labenusystem_class').select("labenusystem_class.*").where("labenusystem_class.module");
+      return await this.connection('labenusystem_class')
 
     } catch (error: any) {
       throw new Error(error.sqlMessage || error.message);
