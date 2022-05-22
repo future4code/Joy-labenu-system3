@@ -4,15 +4,15 @@ import { connection } from "../connection";
 export class studentDatabase {
   private connection = connection;
 
-  public createStudent = async (student: Student): Promise<void> => {
+  public createStudent = async ( id: string, name: string , email: string , birth_date: string, id_class: string): Promise<any> => {
     try {
-      await this.connection("labenusystem_student").insert(student);
+      await this.connection("labenusystem_student").insert( {id: id, name: name, email: email , birth_date: birth_date, id_class: id_class} );
     } catch (error: any) {
       throw new Error(error.sqlMessage || error.message);
     }
   };
 
-  public getAllStudent = async (): Promise<void> => {
+  public getAllStudent = async (): Promise<any> => {
     try {
       return await this.connection('labenusystem_student');
     } catch (error: any) {

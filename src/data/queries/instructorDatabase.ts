@@ -4,9 +4,9 @@ import { connection } from "../connection";
 export class instructorDatabase {
   private connection = connection;
 
-  public createInstructor = async (instructor: Instructor): Promise<void> => {
+  public createInstructor = async (id: string, name: string , email: string , birth_date: string, id_class: string): Promise<void> => {
     try {
-      await this.connection("labenusystem_instructor").insert(instructor);
+      await this.connection("labenusystem_instructor").insert({id: id, name: name, email: email , birth_date: birth_date, id_class: id_class});
     } catch (error: any) {
       throw new Error(error.sqlMessage || error.message);
     }

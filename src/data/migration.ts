@@ -36,7 +36,7 @@ const createInstructor = () => connection
         id VARCHAR(255) PRIMARY KEY,
         name VARCHAR(255) NOT NULL,
         email VARCHAR(255) NOT NULL UNIQUE,
-        birth_date VARCHAR(255) NOT NULL,
+        birth_date DATE(255) NOT NULL,
         id_class VARCHAR(255) NOT NULL,
         FOREIGN KEY (id_class) REFERENCES labenusystem_class(id)
       );
