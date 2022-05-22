@@ -3,7 +3,7 @@ import { changeClassByModule } from "./data/endpoints/changeClassByModule";
 import { changeInstructorClass } from "./data/endpoints/changeInstructorClass";
 import { changeStudentClass } from "./data/endpoints/changeStudentClass";
 import { createClass } from "./data/endpoints/createClass";
-import { getAllClass } from "./data/endpoints/getAllClass";
+import { getActiveClasses } from "./data/endpoints/getActiveClass";
 import { getAllInstructors } from "./data/endpoints/getAllInstructors";
 import { createStudent } from "./data/endpoints/createStudent";
 import { createInstructor } from "./data/endpoints/createInstructor";
@@ -21,7 +21,7 @@ app.post('/student', createStudent)
 app.post('/instructor', createInstructor)
 
 //Endpoint used to get all classes
-app.get('/class/active', getAllClass)
+app.get('/class/active', getActiveClasses)
 
 //Endpoint used to get all student
 app.get('/student/all', getAllStudents)
