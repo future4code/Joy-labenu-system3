@@ -59,8 +59,8 @@ Neste endpoint é necessário passar as seguintes informações no body da requi
 
 ```bash
 {
-    "name": "Lucas Txai",
-    "email": "balatensa@gmail.com",
+    "name": "Lucas",
+    "email": "email@gmail.com",
     "birthDate": "16/05/1995",
     "id_class":"68a4897f-0126-4f8f-ad68-5ba3eaf4690d"
 }
@@ -72,8 +72,8 @@ POST  /instructor
 Neste endpoint é necessário passar as seguintes informações no body da requisição. Ele envia uma mensagem de sucesso ao cadastrar o instrutor.
 ```bash
 {
-    "name": "Jessica Bento",
-    "email": "jessica_bento@gmail.com",
+    "name": "Jessica",
+    "email": "email@gmail.com",
     "birthDate": "16/05/1997",
     "id_class":"68a4897f-0126-4f8f-ad68-5ba3eaf4690d"   
 }
