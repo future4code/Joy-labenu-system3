@@ -1,0 +1,16 @@
+[
+    {
+        "id": "5a7e728a-3afa-47d6-850d-0fba7786e6a7",
+        "name": "Leticia Shijo",
+        "email": "shijo@gmail.com",
+        "birth_date": "1995-05-14",
+        "id_class": "6a84572b-357b-495c-80ad-1f777ed1e7a1"
+    },
+    {
+        "id": "62f8edd5-c522-44c3-92a7-bd3b6303465d",
+        "name": "Rodrigo Brezolin",
+        "email": "rodrigo@gmail.com",
+        "birth_date": "1990-06-06",
+        "id_class": "68a4897f-0126-4f8f-ad68-5ba3eaf4690d"
+    }
+]
